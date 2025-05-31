@@ -259,44 +259,35 @@ Step 8: End the program.
 
 ## PROGRAM
 ```
-#include <stdio.h>
-
-struct Student {
+ #include <stdio.h>
+ struct Student {
     char name[50];
-    float marks[5];
+    int marks[5];
     float total;
     float average;
-};
-
-int main() {
+ };
+ int main() {
     struct Student student;
-    
-    printf("Enter student name: ");
-    getchar();  
-    fgets(student.name, sizeof(student.name), stdin);
-    
-    student.total = 0;
-    
+    int sum = 0;
+    printf("Enter student's name: ");
+    scanf("%s", student.name);
     printf("Enter marks for 5 subjects:\n");
     for (int i = 0; i < 5; i++) {
         printf("Subject %d: ", i + 1);
-        scanf("%f", &student.marks[i]);
-        student.total += student.marks[i];
+        scanf("%d", &student.marks[i]);
+        sum += student.marks[i];
     }
-    
-    student.average = student.total / 5;
-    
-    printf("\nStudent Information:\n");
-    printf("Name: %s", student.name);
+    student.total = sum;
+    student.average = sum / 5.0;
+    printf("\nStudent Name: %s\n", student.name);
     printf("Total Marks: %.2f\n", student.total);
     printf("Average Marks: %.2f\n", student.average);
-    
     return 0;
-}
+ }
 ```
 
 ## OUTPUT
-![image](https://github.com/user-attachments/assets/5575e41f-3ce0-4479-9845-c9c3765438df)
+![image](https://github.com/user-attachments/assets/1fb85e45-3a88-4bc3-9a45-85d9d26dafb2)
     
  
 
