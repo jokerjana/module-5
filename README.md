@@ -214,7 +214,7 @@ retun 0;
 ```
 
  ## OUTPUT
-![image](https://github.com/user-attachments/assets/2ce20622-03fe-4561-8556-dbada13ea549)
+![WhatsApp Image 2025-05-31 at 10 13 19_e354dd80](https://github.com/user-attachments/assets/79dbdbf8-fd9f-495e-ba0b-cecbe72d819c)
 
 
 ## RESULT
